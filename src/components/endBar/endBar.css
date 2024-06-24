@@ -1,0 +1,24 @@
+@font-face{
+    font-family:'Handlee';
+    src:url('../../Handlee-Regular.ttf');
+}
+
+
+.endBar{
+    display: flex;
+    justify-content:flex-end;
+    color:#00527c;
+    height: 30px;
+    width: 100%;
+    background-color:#eaf4fe;
+    bottom: 0vw;
+}
+
+.endBar .container{
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Handlee';
+    background-color:#eaf4fe;
+}

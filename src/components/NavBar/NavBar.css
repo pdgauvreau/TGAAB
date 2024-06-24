@@ -1,0 +1,92 @@
+@font-face{
+    font-family:'Handlee';
+    src:url('../../Handlee-Regular.ttf');
+}
+
+
+.navbar{
+    position: sticky;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    /*#daecfe*/
+    background-color: #eaf4fe;
+    z-index:5;
+}
+
+.navbar .buttons{
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:block;
+    height:100%;
+    width:70px;
+    background-image: url('../../graphic2.png');
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin: 2rem;
+    z-index:10;
+}
+
+a{
+    font-family:'Handlee';
+    font-stretch:calc(2vw);
+    font-weight:540;
+    color:#00527c;
+    margin-right:1.4rem;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown{
+    display:none;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+a:hover{
+    color:rgb(50, 57, 88);
+}
+
+
+@media screen and (max-width: 700px){
+    .navbar ul a{
+        display:none;
+    }
+    .dropdown{
+        display:block;
+        top:0;
+        right:0;
+        padding:1rem;
+    }
+
+
+}
+
+

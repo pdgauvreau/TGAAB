@@ -1,0 +1,106 @@
+ 
+ .grid{
+    background-color: rgba(0, 0, 0, 0.021);
+    color: #2020200c;
+    height: 60vh;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-right: 9rem;
+    margin-left: 9rem;
+}
+
+.grid ul{
+    height:50%;
+    display: flex;
+    width: 100%;
+    margin-bottom:5px;
+    justify-content:center;
+}
+
+.grid a{
+    height:100%;
+    width:50%;
+    margin-right:5px;
+}
+
+.grid ul button{
+    position: relative;
+    border: none;
+    height: 100%;
+    width:100%;
+    transition: 0.4s;
+    cursor: pointer;
+    z-index:98;
+    overflow:hidden;
+}
+
+.grid ul button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+.grid ul button:hover {
+    transform: scale(1.01);
+    transition:0.6s;
+    opacity:1;
+}
+
+.grid ul button .label{
+    z-index:99;
+    height: 45px;
+    width: 120px;
+    background-color:#000000ab;
+    color:white;
+    align-content:space-around;
+    font-size:18px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius:7px;
+}
+
+
+.ticket{
+    background-image:url('./ticket.jpg');
+    background-position: center;
+    background-size:cover;
+    background-color:black;
+    opacity:0.5;
+}
+
+.tv{
+    background-image:url('./tv.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity:0.5;
+}
+.library{
+    background-image:url('./library.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity:0.5;
+}
+.somemoney{
+    background-image:url('./someMoney.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity:0.5;
+}
+.amirror{
+    background-image:url('./mirror.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity:0.5;
+}
+.anapple{
+    background-image:url('./apple.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity:0.5;
+}

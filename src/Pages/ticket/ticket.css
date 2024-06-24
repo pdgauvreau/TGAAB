@@ -1,0 +1,160 @@
+
+@font-face{
+    font-family:'Handlee';
+    src:url('../../Handlee-Regular.ttf');
+}
+.page-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100px;
+}
+.page{
+    font-family:'Handlee';
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:220px;
+    height:90px;
+    font-size:40px;
+    margin-top:10px;
+    color:#00527c
+}
+
+
+.places {
+    display:flex;
+    justify-content:center;
+    padding:2rem;
+    z-index:90;
+    width:100%;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    row-gap:30px;
+    column-gap:10px;
+}
+
+.places button {
+   width: 375px;
+   height: 370px;
+   background-color:rgba(180, 219, 231, 0.842);
+   border:none;
+   display: flex;
+   flex-direction:column;
+   align-items:flex-start;
+   justify-content:flex-start;
+   text-align:left;
+   transition:0.5s;
+   border-radius:7px;
+}
+
+.places .image{
+    width:100%;
+    height:88%;
+    border-radius:7px;
+}
+
+.places button:hover {
+    box-shadow:0 0 34px #404041;  
+    transition:1.3s;
+    .image{
+        height:30%;
+        width:100%;
+        transition:1.2s;
+    }
+    .body p{
+        display:contents;
+        color:#00527c;
+        font-family:'Handlee';
+    }
+    .body{
+        transition:1.2s;
+        height:70%;
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        padding:1.5rem;
+    }
+}
+
+.spacer{
+    height:100px;
+    background-color:white;
+}
+
+.body{
+    width:100%;
+    height:12%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/*text*/
+.body h1{
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-bottom:.5rem;
+    color:#00527c;
+    font-family:'Handlee';
+    font-weight:200;
+    letter-spacing:1px;
+}
+
+.body p{
+    display: none;
+    width:100%;
+    padding:1rem;
+    border:1px solid red;
+
+}
+
+div .france .image{
+    background-image: url('franceGeorge.jpg');
+    background-position: center;
+    background-size:cover;
+}
+div .italy .image{
+    background-image: url('italyGeorge.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+div .japan .image{
+    background-image: url('japanGeorge.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+div .germany .image{
+    background-image: url('georgeGermany.jpg');
+    background-position: center;
+    background-size:cover;
+}
+div .greenland .image{
+    background-image: url('georgeSpring.jpg');
+    background-position: center;
+    background-size:cover;
+}
+div .australia .image{
+    background-image: url('georgeAustralia.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+
+@media only screen and (max-width: 1500px){
+    .places{
+        grid-template-columns:33% 33% 33%;
+        transition: 2s;
+    }
+}
+@media only screen and (max-width: 1125px){
+    .places{
+        grid-template-columns: 50% 50%;
+        transition: 2s;
+    }
+}
